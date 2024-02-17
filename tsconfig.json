@@ -23,38 +23,41 @@
     "noFallthroughCasesInSwitch": true,
     "baseUrl": "src",
     "paths": {
-      "@": [
+      "@/*": [
         "*"
       ],
-      "@components": [
+      "@components/*": [
         "components/*"
       ],
-      "@constants": [
+      "@constants/*": [
         "constants/*"
       ],
-      "@pages": [
+      "@pages/*": [
         "pages/*"
       ],
-      "@styles": [
+      "@styles/*": [
         "styles/*"
       ],
-      "@utils": [
+      "@utils/*": [
         "utils/*"
       ],
-      "@assets": [
+      "@assets/*": [
         "assets/*"
       ],
-      "@hooks": [
+      "@hooks/*": [
         "hooks/*"
       ],
-      "@model": [
+      "@model/*": [
         "model/*"
       ],
-      "@routes": [
+      "@routes/*": [
         "routes/*"
       ],
-      "@api": [
+      "@api/*": [
         "api/*"
+      ],
+      "@layout/*": [
+        "layout/*"
       ],
     }
   },

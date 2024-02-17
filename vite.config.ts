@@ -1,22 +1,24 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
 	plugins: [react()],
 	resolve: {
 		alias: [
-			{ find: '@', replacement: '/src' },
-			{ find: '@components', replacement: '/src/components' },
-			{ find: '@constants', replacement: '/src/constants' },
-			{ find: '@pages', replacement: '/src/pages' },
-			{ find: '@styles', replacement: '/src/styles' },
-			{ find: '@utils', replacement: '/src/utils' },
-			{ find: '@assets', replacement: '/src/assets' },
-			{ find: '@hooks', replacement: '/src/hooks' },
-			{ find: '@model', replacement: '/src/model' },
-			{ find: '@routes', replacement: '/src/routes' },
-			{ find: '@api', replacement: '/src/api' },
+			{ find: '@', replacement: path.resolve(__dirname, '/src') },
+			{ find: '@components', replacement: path.resolve(__dirname, '/src/components') },
+			{ find: '@constants', replacement: path.resolve(__dirname, '/src/constants') },
+			{ find: '@pages', replacement: path.resolve(__dirname, '/src/pages') },
+			{ find: '@styles', replacement: path.resolve(__dirname, '/src/styles') },
+			{ find: '@utils', replacement: path.resolve(__dirname, '/src/utils') },
+			{ find: '@assets', replacement: path.resolve(__dirname, '/src/assets') },
+			{ find: '@hooks', replacement: path.resolve(__dirname, '/src/hooks') },
+			{ find: '@model', replacement: path.resolve(__dirname, '/src/model') },
+			{ find: '@routes', replacement: path.resolve(__dirname, '/src/routes') },
+			{ find: '@api', replacement: path.resolve(__dirname, '/src/api') },
+			{ find: '@layout', replacement: path.resolve(__dirname, '/src/layout') },
 		],
 	},
 });
