@@ -9,5 +9,6 @@ export const routes = {
 	secret: {
 		login: '/secret/login',
 		professor: '/secret/professor',
+		professor2: '/secret/professor2',
 	},
 };
