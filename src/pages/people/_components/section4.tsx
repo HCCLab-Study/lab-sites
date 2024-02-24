@@ -1,6 +1,6 @@
 import React from 'react';
 
-// 연구생이었던 사람 소개 부분
+// Graduate Students(part-time), Undergraduate Researchers 부분
 function Section4() {
   return (
     <section>

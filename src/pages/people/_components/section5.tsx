@@ -1,6 +1,6 @@
 import React from 'react';
 
-// footer 부분
+// Developer internship 부분
 function Section5() {
   return (
     <section>
