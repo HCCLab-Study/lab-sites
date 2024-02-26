@@ -1,6 +1,6 @@
 import React from 'react';
 
-// footer 부분
+// Alumni 부분
 function Section7() {
   return (
     <section>

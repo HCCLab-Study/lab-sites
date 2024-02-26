@@ -2,7 +2,7 @@ import React from 'react';
 
 // Graduate Students (Full-Time) 부분
 
-const peopleData = [
+const graduateStudentData = [
   {name: '곽소정',
     department: '인공지능응용학과 석사과정',
     interests: ['#UX/CX', '#기획', '#DataAnalytics'],
@@ -38,7 +38,7 @@ function Section3() {
           <h2 className='absolute flex items-center text-3xl font-semibold tracking-widest'>Graduate Students (Full-Time)</h2>
         </div>
         <div className="flex flex-row relative top-[50px]">
-          {peopleData.map((person, index) => (
+          {graduateStudentData.map((person, index) => (
             <div key={index} className='flex flex-col items-center justify-center'>
               <img src={person.imageUrl} alt={`${person.name} 이미지`} className='w-[160px] h-[160px] object-cover mx-5 my-4'/>
               <p className='font-bold'>{person.name}</p>
