@@ -41,7 +41,7 @@ const developerInternshipData = [
   {name: '강준우',
     department: '정보융합학부 3학년',
     interests: ['#FullStack'],
-    imageUrl: 'src/assets/images/people/서대원.png',
+    imageUrl: 'src/assets/images/people/강준우.png',
   },
   {name: '박준수',
     department: '정보융합학부 4학년',
