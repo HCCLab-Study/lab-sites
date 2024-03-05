@@ -1,6 +1,7 @@
 import Router from './routes';
 import Footer from './layout/footer';
 
+
 function App() {
 	return (
 		<>
