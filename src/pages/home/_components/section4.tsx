@@ -18,7 +18,7 @@ function Section4() {
                         @hcclab
                     </div>
                 </div>
-                <img src='src\assets\images\main\news.png' alt='연구실 소식 이미지' className='h-[830px] w-[1350px] object-cover' style={{marginTop: '30px'}}/>
+                <img src='src\assets\images\home\news.png' alt='연구실 소식 이미지' className='h-[830px] w-[1350px] object-cover' style={{marginTop: '30px'}}/>
             </div>
         </section>
     );
