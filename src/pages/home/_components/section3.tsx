@@ -3,7 +3,7 @@ function Section3() {
         <section className='relative w-full h-[600px] left-0 right-0' style={{marginTop: '300px'}}>
             <div className='absolute h-[350px] w-[1700px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto text-start flex items-center'>
                 <div className='flex' style={{marginLeft: '170px'}}>
-                    <img src='src\assets\images\home\introduction2.png' alt='연구분야 이미지' className='h-[450px] w-[470px] object-cover mr-10' />
+                    <img src='src\assets\images\home\introduction2.png' alt='연구분야 이미지' className='h-[450px] w-[470px] object-contain mr-10' />
                     <div className="relative">
                         <div className="text-custom-navy font-semibold text-5xl tracking-tight" style={{marginTop: '50px', marginBottom: '50px'}}>
                             We develop technology for people
