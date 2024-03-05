@@ -22,27 +22,27 @@ export default function Header() {
 				<nav className="mr-32">
 					<ul className="flex items-center justify-center mr-10 space-x-8 text-white navi">
 						<li>
-							<Link to="people" className={getLinkStyle('/people')}>
+							<Link to='people' className={getLinkStyle('/people')}>
 								PEOPLE
 							</Link>
 						</li>
 						<li>
-							<Link to="projects" className={getLinkStyle('/projects')}>
+							<Link to='projects' className={getLinkStyle('/projects')}>
 								PROJECT
 							</Link>
 						</li>
 						<li>
-							<Link to="#" className={getLinkStyle('/#')}>
+							<Link to='publications' className={getLinkStyle('/publications')}>
 								PUBLICATIONS
 							</Link>
 						</li>
 						<li>
-							<Link to="#" className={getLinkStyle('/#')}>
+							<Link to='lectures' className={getLinkStyle('/lectures')}>
 								LECTURES
 							</Link>
 						</li>
 						<li>
-							<Link to="#" className={getLinkStyle('/#')}>
+							<Link to='club' className={getLinkStyle('/club')}>
 								전공동아리
 							</Link>
 						</li>
