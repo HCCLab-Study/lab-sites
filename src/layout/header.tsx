@@ -13,7 +13,7 @@ export default function Header() {
 			<header className='h-14 bg-gradient-to-r from-sky-500 to-indigo-500 items-center fixed top-0 w-full flex justify-between'>
 				<div className='flex items-center ml-32'>
 				<Link to='home' className='logo text-white'>
-						<img src='src/assets/images/main/kwmark.jpeg' alt='KW MARK' className='w-36' />
+						<img src='src/assets/images/header/kw-logo.png' alt='KW MARK' className='w-36' />
 					</Link>
 					<Link to='home' className='logo text-white ml-4'>
 						<h3 className='text-xl font-bold'>KW-HCC LAB</h3>

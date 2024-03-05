@@ -1,5 +1,6 @@
 //
 function Section4() {
+
 	return (
 		<section className="relative w-full	h-[1200px] left-0 right-0 bg-section-gray">
 			<div className="relative items-center justify-start font-roboto">
@@ -21,7 +22,7 @@ function Section4() {
 					</div>
 				</div>
 				<img
-					src="src\assets\images\main\news.png"
+					src="src\assets\images\home\news.png"
 					alt="연구실 소식 이미지"
 					className="h-[830px] object-cover"
 					style={{ marginTop: '30px' }}
@@ -29,6 +30,7 @@ function Section4() {
 			</div>
 		</section>
 	);
+
 }
 
 export default Section4;

@@ -1,10 +1,11 @@
 function Section3() {
+
 	return (
 		<section className="relative w-full h-[600px] left-0 right-0" style={{ marginTop: '300px' }}>
 			<div className="absolute h-[350px] w-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto text-start flex items-center">
 				<div className="flex w-full">
 					<img
-						src="src\assets\images\main\concept2.png"
+						src="src\assets\images\home\introduction2.png"
 						alt="연구분야 이미지"
 						className="h-[450px] w-[470px] object-cover mr-10"
 					/>
@@ -39,6 +40,7 @@ function Section3() {
 			</div>
 		</section>
 	);
+
 }
 
 export default Section3;
