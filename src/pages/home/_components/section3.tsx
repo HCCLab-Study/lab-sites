@@ -29,6 +29,7 @@ function Section3() {
             </div>
         </section>
     );
+
 }
 
 export default Section3;
