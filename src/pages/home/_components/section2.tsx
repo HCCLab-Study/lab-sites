@@ -10,7 +10,7 @@ function Section2() {
                     Where Technology Meets Humanity
                 </div>
                 <div className='flex justify-center items-center'>
-                    <img src='src\assets\images\main\concept.png' alt='연구분야 이미지' className='h-[350px] w-[1500px] object-cover' style={{marginBottom: '300px'}}/>
+                    <img src='src\assets\images\home\introduction1.png' alt='연구분야 이미지' className='h-[350px] w-[1500px] object-cover' style={{marginBottom: '300px'}}/>
                 </div>
             </div>
         </section>
