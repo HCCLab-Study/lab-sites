@@ -17,6 +17,7 @@ function Section1() {
 				<b>3) Rapid development of MVP (Minimum viable product) to verify solutions.</b> Currently looking for
 				self-motivated, passionate students. If you are interested in research assistants studying HCI, UX, or AI
 				applications, please feel free to contact me at email.
+
 			</div>
 			{/* // TODO: Introduction 바로가기 연결하기 */}
 			<div

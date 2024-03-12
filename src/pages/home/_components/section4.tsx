@@ -35,6 +35,7 @@ function Section4() {
 			</div>
 		</section>
 	);
+
 }
 
 export default Section4;
