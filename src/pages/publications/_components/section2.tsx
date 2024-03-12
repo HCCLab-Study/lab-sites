@@ -1,8 +1,8 @@
 // Journals
 function Section2() {
 	return (
-		<section className="relative w-full h-[1000px] left-0 right-0">
-			<div className="absolute h-[450px] w-[1000px] left-1/2 top-1/4 transform -translate-x-1/2 -translate-y-1/2 font-roboto text-custom-navy">
+		<section className="relative w-full h-auto left-0 right-0">
+			<div className="relative w-[1000px] h-[3700px] left-1/2 top-1/4 transform -translate-x-1/2 -translate-y-1/16 font-roboto text-custom-navy">
 				<div className="flex flex-row gap-x-20 relative top-[50px]">
 					<div>
 						<div className="h-[50px] w-full border-b-2 border-custom-blue mb-6">
