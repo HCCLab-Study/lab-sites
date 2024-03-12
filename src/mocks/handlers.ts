@@ -1,4 +1,4 @@
-import { people } from '@/mocks/people.mock';
+import { people } from './people.mock';
 import { HttpResponse, http } from 'msw';
 
 export const handlers = [
