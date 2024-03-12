@@ -1,6 +1,6 @@
 import React from 'react';
 
-// 연구실 대학원 과정 정보
+// 연구실 학부 과정 정보
 const undergraudateCourses = [
     { title: 'EXPERIMENTAL DESIGN AND ANALYSIS (실험설계및분석)',
       semester: '2021-1, 2022-1, 2023-1, 2024-1',

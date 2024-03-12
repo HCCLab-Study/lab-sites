@@ -1,6 +1,6 @@
 import React from 'react';
 
-// 연구실 학부 과정 정보
+// 연구실 대학원 과정 정보
 const graduateCourse = [
     { title: 'AI SERVICE DEVELOPMENT STUDIO\n(인공지능서비스개발스튜디오)',
       semester: '대학원 2023-1',
