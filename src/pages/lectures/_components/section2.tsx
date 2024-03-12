@@ -3,7 +3,6 @@ import React from "react";
 // 교수님이 수업하신 강의 list
 function Section2 () {
 
-
     return (
         <section className='relative w-full h-[500px] left-0 right-0'>
              <div className='absolute h-[450px] w-[1000px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto text-custom-navy'>

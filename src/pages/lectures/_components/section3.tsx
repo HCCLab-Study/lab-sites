@@ -28,6 +28,7 @@ const graduateCourse = [
     }
     ];
 
+
 function Section3() {
     return (
         <section className='relative w-full h-[1200px] left-0 right-0 bg-section-gray'>
