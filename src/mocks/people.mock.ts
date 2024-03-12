@@ -1,4 +1,4 @@
-import { GraduateStudent, Person, Professor } from '@/model/person.type';
+import { GraduateStudent, Person, Professor } from '../model/person.type';
 import { UndergraduateStudent } from '../model/person.type';
 
 const professor: Professor = {
