@@ -6,17 +6,21 @@ interface Student {
 	interest: string[];
 }
 
-interface GraduateStudent extends Student {
+export interface GraduateStudent extends Student {
 	course: 'master' | 'doctor'; // 석사 | 박사
+	time: 'Full' | 'Part';
 }
 
-interface UndergraduateStudent extends Student {}
+export interface UndergraduateStudent extends Student {
+	course: 'researcher' | 'intern'; // 연구생 | 인턴
+}
 
-interface Professor {
+export interface Professor {
 	name: string;
 	position: string; // TODO: 공학박사 조교수 속성명을 좀 더 고민
 	major: string[];
 	email: string;
 	tel: string;
 	office: string;
+	lab: string;
 }
