@@ -22,34 +22,44 @@ export default function Header() {
 				<nav className="mr-32">
 					<ul className="flex items-center justify-center mr-10 space-x-8 text-white navi">
 						<li>
-							<Link to='people' className={getLinkStyle('/people')}>
+							<Link to="people" className={getLinkStyle('/people')}>
 								PEOPLE
 							</Link>
 						</li>
 						<li>
-							<Link to='projects' className={getLinkStyle('/projects')}>
+							<Link to="projects" className={getLinkStyle('/projects')}>
 								PROJECT
 							</Link>
 						</li>
 						<li>
-							<Link to='publications' className={getLinkStyle('/publications')}>
+							<Link to="publications" className={getLinkStyle('/publications')}>
 								PUBLICATIONS
 							</Link>
 						</li>
 						<li>
-							<Link to='lectures' className={getLinkStyle('/lectures')}>
+							<Link to="lectures" className={getLinkStyle('/lectures')}>
 								LECTURES
 							</Link>
 						</li>
 						<li>
-							<Link to='club' className={getLinkStyle('/club')}>
+							<Link to="club" className={getLinkStyle('/club')}>
 								전공동아리
 							</Link>
+						</li>
+						<li>
+							<button
+								onClick={() => {
+									fetch('/api/people')
+										.then((res) => res.json())
+										.then((data) => console.log(data));
+								}}>
+								api 호출
+							</button>
 						</li>
 						<div className="relative rounded-full inline-flex mt-1.1">
 							<input className="py-2 pl-4 pr-2 text-black rounded-full" type="text" placeholder="Search" />
 							<button className="absolute top-0 right-0 mt-2 mr-2">
-								<img src='src/assets/images/header/magnifying-glass.png' alt='magnifying-glass' className='w-6'/>
+								<img src="src/assets/images/header/magnifying-glass.png" alt="magnifying-glass" className="w-6" />
 							</button>
 						</div>
 					</ul>
