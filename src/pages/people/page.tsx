@@ -8,7 +8,7 @@ import Section7 from './_components/section7';
 
 export default function PeoplePage() {
 	return (
-		<main>
+		<main className='mt-14'>
 			<Section1 />
 			<Section2 />
 			<Section3 />
