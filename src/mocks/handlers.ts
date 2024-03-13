@@ -8,7 +8,7 @@ export const handlers = [
 		return HttpResponse.json({ people: [...people] });
 	}),
 
-	http.get('/api/project', () => {
+	http.get('/api/project', ({ request, params, cookies }) => {
 		return HttpResponse.json({ project: [...project]});
 	}),
 ];
