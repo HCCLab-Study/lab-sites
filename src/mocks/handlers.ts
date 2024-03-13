@@ -1,4 +1,5 @@
 import { people } from './people.mock';
+import { project } from './projects.mock';
 import { HttpResponse, http } from 'msw';
 
 export const handlers = [
@@ -8,6 +9,6 @@ export const handlers = [
 	}),
 
 	http.get('/api/project', () => {
-		return HttpResponse.json({});
+		return HttpResponse.json({ project: [...project]});
 	}),
 ];
