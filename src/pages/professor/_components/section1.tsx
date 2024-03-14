@@ -1,5 +1,6 @@
 import React from "react";
 
+// 교수님 프로필 이미지, 소개
 function Section1 () {
 
   

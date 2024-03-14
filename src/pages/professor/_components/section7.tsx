@@ -1,5 +1,6 @@
 import React from 'react';
 
+// 전문 활동
 function Section7() {
     return (
         <section className='relative w-full h-[850px] left-0 right-0 bg-section-gray'>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// 교수님이 수업하신 강의 list
+// 교수님 연구실 소개, 연락처 정보
 function Section2 () {
 
     const copyEmail = async (text: string) => {

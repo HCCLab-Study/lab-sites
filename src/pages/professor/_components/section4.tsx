@@ -1,5 +1,6 @@
 import React from 'react';
 
+// 교수님 연구 경험
 function Section4() {
 
     return (

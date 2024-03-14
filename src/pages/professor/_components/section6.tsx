@@ -1,5 +1,6 @@
 import React from 'react';
 
+// 교수님이 하신 초빙 강의 및 세미나
 function Section6() {
     return (
         <section className='relative w-full h-[650px] left-0 right-0'>

@@ -1,5 +1,6 @@
 import React from 'react';
 
+// 교수님 학력
 function Section5() {
     return (
         <section className='relative w-full h-[250px] left-0 right-0 bg-section-gray'>
