@@ -5,7 +5,7 @@ export const routes = {
 	projects: '/projects',
 	publications: '/publications',
 	lectures: '/lectures',
-	club: '/전공동아리',
+	club: '/club',
 	// TODO: 교수님 접속 가능 페이지 추가 -> 완료
 	secret: {
 		login: '/secret/login',
