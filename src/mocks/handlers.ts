@@ -9,6 +9,7 @@ export const handlers = [
 	}),
 
 	http.get('/api/project', ({ request, params, cookies }) => {
+		console.log('api');
 		return HttpResponse.json({ project: [...project]});
 	}),
 ];

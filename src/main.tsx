@@ -13,12 +13,15 @@ async function enableMocking() {
 	if (process.env.NODE_ENV !== 'development') return;
 
 	if (typeof window === 'undefined') {
+		// 서버
 		const { server } = await import('./mocks/server.ts');
 		server.listen();
 	} else {
+		// 브라우저
 		const { worker } = await import('./mocks/worker.ts');
 		worker.start();
 	}
+
 	// return worker.start();
 }
 
