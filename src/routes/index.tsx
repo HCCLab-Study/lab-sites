@@ -8,6 +8,7 @@ import ProjectsPage from '../pages/projects/page';
 import PublicationsPage from '../pages/publications/page';
 import LecturesPage from '../pages/lectures/page';
 import ClubPage from '../pages/club/page';
+import ProfessorPage from '../pages/professor/page';
 
 export default function Router() {
 	const elements = [
@@ -38,6 +39,10 @@ export default function Router() {
 				{
 					path: routes.club, // club
 					element: <ClubPage />,
+				},
+				{
+					path: routes.professor, // director
+					element: <ProfessorPage />,
 				},
 
 				{

@@ -21,7 +21,7 @@ function Section2() {
             <li>Office : 광운대학교 새빛관 808호</li>
             <li><a href="https://sites.google.com/view/hcclab/people/schedule" className='underline underline-offset-1'>일정보기</a></li>
           </ul>
-          <a href="#director 주소 적기" target="_blank" rel="noopener noreferrer" className="inline-block w-[144.68px] h-[40px] bg-custom-blue rounded-full text-white filter drop-shadow-[0px 4px 4px rgba(0, 0, 0, 0.25)] flex justify-center items-center">자세히</a>
+          <a href="/people/professor" target="_blank" rel="noopener noreferrer" className="inline-block w-[144.68px] h-[40px] bg-custom-blue rounded-full text-white filter drop-shadow-[0px 4px 4px rgba(0, 0, 0, 0.25)] flex justify-center items-center">자세히</a>
         </div>
       </div>
     </section>
