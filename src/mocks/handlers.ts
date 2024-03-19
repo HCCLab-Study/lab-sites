@@ -3,7 +3,6 @@ import { HttpResponse, http } from 'msw';
 
 export const handlers = [
 	http.get('/api/people', ({ request, params, cookies }) => {
-		console.log('api');
 		return HttpResponse.json({ people: [...people] });
 	}),
 
