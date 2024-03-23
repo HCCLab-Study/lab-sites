@@ -1,7 +1,13 @@
+import Section1 from "./_components/section1";
+import Section2 from "./_components/section2";
+import Section3 from "./_components/section3";
+
 export default function ClubPage() {
 	return (
-		<main>
-			<nav>전공동아리페이지</nav>
+		<main className='mt-14'>
+			<Section1 />
+			<Section2 />
+			<Section3 />
 		</main>
 	);
 }

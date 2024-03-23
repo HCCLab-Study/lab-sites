@@ -13,7 +13,7 @@ export default function Header() {
 			<header className="fixed top-0 flex items-center justify-between w-full z-[999] h-14 bg-gradient-to-r from-sky-500 to-indigo-500">
 				<div className="flex items-center ml-32">
 					<Link to="home" className="text-white logo">
-						<img src="src/assets/images/header/kw-logo.png" alt="KW MARK" className="w-36" />
+						<img src="../src/assets/images/header/kw-logo.png" alt="KW MARK" className="w-36" />
 					</Link>
 					<Link to="home" className="ml-4 text-white logo">
 						<h3 className="text-xl font-bold">KW-HCC LAB</h3>
@@ -46,20 +46,11 @@ export default function Header() {
 								전공동아리
 							</Link>
 						</li>
-						<li>
-							<button
-								onClick={() => {
-									fetch('/api/people')
-										.then((res) => res.json())
-										.then((data) => console.log(data));
-								}}>
-								api 호출
-							</button>
-						</li>
+
 						<div className="relative rounded-full inline-flex mt-1.1">
 							<input className="py-2 pl-4 pr-2 text-black rounded-full" type="text" placeholder="Search" />
 							<button className="absolute top-0 right-0 mt-2 mr-2">
-								<img src="src/assets/images/header/magnifying-glass.png" alt="magnifying-glass" className="w-6" />
+								<img src="../src/assets/images/header/magnifying-glass.png" alt="magnifying-glass" className="w-6" />
 							</button>
 						</div>
 					</ul>
