@@ -2,7 +2,7 @@
 function Section1() {
 	return (
 		<section
-			className="flex flex-col gap-y-12 items-start justify-center justify w-full h-[689px] left-0 right-0 bg-gradient-to-br from-custom-red to-custom-blue"
+			className="flex flex-col gap-y-12 items-start justify-center justify w-full h-[690px] left-0 right-0 bg-gradient-to-br from-[#A64D4D] to-[#2370C8]"
 			style={{ paddingLeft: '380px', paddingRight: '350px' }}>
 			<div className="inset-x-0 font-semibold leading-10 text-white font-roboto text-7xl">
 				Human-Centered
