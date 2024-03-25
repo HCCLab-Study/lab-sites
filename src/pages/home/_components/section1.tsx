@@ -1,4 +1,13 @@
 // Title
+
+// 버튼 누르면 Section2로 넘어가는 함수 생성
+function scrollToSection2() {
+	const section2 = document.getElementById('section2');
+	if (section2) {
+	  section2.scrollIntoView({ behavior: 'smooth' });
+	}
+  }
+
 function Section1() {
 	return (
 		<section className="relative w-full	h-[690px] left-0 right-0 bg-gradient-to-br from-[#A64D4D] to-[#2370C8]">
@@ -15,7 +24,7 @@ function Section1() {
 				applications, please feel free to contact me at email.
 				</div>
 				{/* // TODO: Introduction 바로가기 연결하기 */}
-				<button className="w-fit p-3 px-12 text-xl font-semibold text-black bg-white rounded-full font-roboto">
+				<button onClick={scrollToSection2} className="w-fit p-3 px-12 text-xl font-semibold text-black bg-white rounded-full font-roboto">
 					Learn More
 				</button>
 			</div>

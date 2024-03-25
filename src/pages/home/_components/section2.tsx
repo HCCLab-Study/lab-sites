@@ -1,7 +1,7 @@
 // Introduction: 연구분야
 function Section2() {
     return (
-        <section className='relative w-full	h-[400px] left-0 right-0'>
+        <section id="section2" className='relative w-full	h-[400px] left-0 right-0'>
             <div className='absolute h-[350px] w-[1000px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto text-center'>
                 <div className="text-custom-blue font-semibold text-xl tracking-widest" style={{marginTop: '100px', marginBottom: '30px'}}>
                     Introduction
