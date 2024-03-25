@@ -1,12 +1,12 @@
 //
 function Section4() {
 	return (
-		<section className="relative w-full	h-[1200px] left-0 right-0 bg-section-gray">
-			<div className="relative justify-start font-roboto items-center" style={{ marginLeft: '280px' }}>
-				<div className="font-extrabold text-xl tracking-widest text-custom-blue" style={{ paddingTop: '80px' }}>
+		<section className="relative w-full	h-[1200px] left-0 right-0 bg-section-gray flex justify-center">
+			<div className="relative font-roboto items-center text-center">
+				<div className="text-left font-extrabold text-xl tracking-widest text-custom-blue" style={{ paddingTop: '80px' }}>
 					News
 				</div>
-				<div className="font-extrabold text-5xl tracking-tight text-custom-navy" style={{ marginTop: '20px' }}>
+				<div className="text-left font-extrabold text-5xl tracking-tight text-custom-navy" style={{ marginTop: '20px' }}>
 					Our recent news
 				</div>
 				<div className="flex">
