@@ -6,8 +6,19 @@ import { useGetAllPublications } from './_hooks/useGetAllPublications';
 export default function PublicationsPage() {
 	const { data: publication, isFetching, isError } = useGetAllPublications();
 
-	const journals: Journals[] = publication?.journals || [];
-	const conferences: Conferences[] = publication?.conferences || [];
+	let journals: Journals[] = [];
+	let conferences: Conferences[] = [];
+
+	if (publication) {
+		for (const item of publication) {
+			if ('journals' in item) {
+				journals.push(item);
+			}
+			if ('conferences' in item) {
+				conferences.push(item);
+			}
+		}
+	}
 
 	return (
 		<main className="mt-14">
