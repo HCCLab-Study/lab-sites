@@ -4,7 +4,7 @@ import { Project } from '../../../model/projects.type';
 // On-going Projects 부분
 function Section2({ ongoingProjects }: { ongoingProjects: Project[] }) {
 
-  const sectionHeight = `${ongoingProjects.length * 50}px`;   // 섹션의 높이를 project 개수에 맞게 동적으로 조절하기 위함
+  const sectionHeight = `${ongoingProjects.length * 100}px`;   // 섹션의 높이를 project 개수에 맞게 동적으로 조절하기 위함
 
   return (
     <section className='relative w-full	h-[350px] left-0 right-0'>
