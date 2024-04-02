@@ -31,7 +31,7 @@ export default function Header() {
 
 	return (
 		<>
-			<header className='fixed top-0 flex items-center justify-between w-full z-[999] h-14 bg-gradient-to-r from-sky-500 to-indigo-500'>
+			<header className="fixed top-0 flex items-center justify-between w-full z-[999] h-14 bg-gradient-to-r from-[#A64D4D] to-[#5F608F]">
 				{width > 1415 ? (
 				<div className='flex items-center ml-32'>
 					<Link to='home' className='text-white logo'>
