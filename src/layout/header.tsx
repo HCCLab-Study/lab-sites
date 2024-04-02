@@ -42,7 +42,7 @@ export default function Header() {
 					</Link>
 				</div>
 				) : (
-				<div className='flex items-center justigy-start'>
+				<div className='flex items-center justigy-start ml-4'>
 					<Link to='home' className='text-white logo'>
 						<img src='../src/assets/images/header/kw-logo.png' alt='KW MARK' className='w-36' />
 					</Link>
