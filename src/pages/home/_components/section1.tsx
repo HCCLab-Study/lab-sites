@@ -10,7 +10,7 @@ function scrollToSection2() {
 
 function Section1() {
 	return (
-		<section className="relative w-full	h-[690px] left-0 right-0 bg-gradient-to-br from-[#A64D4D] to-[#2370C8]">
+		<section className="flex flex-col gap-y-12 items-start justify-center justify w-full h-[690px] left-0 right-0 bg-gradient-to-br from-[#A64D4D] to-[#2370C8]">
 			<div className="absolute w-[1100px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 text-5xl font-bold leading-6 text-white font-roboto">
 				<div className="font-semibold text-white font-roboto text-7xl">
 					Human-Centered<br />Computing Lab

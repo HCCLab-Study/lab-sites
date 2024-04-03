@@ -22,7 +22,7 @@ export default function Header() {
 	const isClickActive = (path: string) => location.pathname === path;
 
 	// 경로를 나타내는 스타일 함수로 빼기
-	const getLinkStyle = (path: string) => (isClickActive(path) ? 'font-bold underline' : '');
+	const getLinkStyle = (path: string) => (isClickActive(path) ? 'font-black underline' : '');
 
 	// 뷰 크기 조절
 	const [width] = useWindowSize();
@@ -99,7 +99,7 @@ export default function Header() {
 				)}
 			</header>
 			{isMenuOpen && width <= 1468 && (
-				<div className='mobile-menu h-32'>
+				<div className="fixed top-0 left-0 w-full bg-white bg-opacity-60 z-50 flex flex-col items-center justify-cente">
 					<ul className='flex flex-col items-center mt-16 text-lg'>
 						{menuItems.map((item) => (
 							<li key={item.path}>
@@ -111,6 +111,7 @@ export default function Header() {
 					</ul>
 				</div>
 			)}
+
 			<Outlet />
 		</>
 	);
