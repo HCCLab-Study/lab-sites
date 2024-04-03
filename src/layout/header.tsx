@@ -29,7 +29,7 @@ export default function Header() {
 	// Menu (햄버거바) 상태관리
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-	// 메뉴 아이템 배열로 생성
+	// 메뉴 아이템 배열 생성
 	const menuItems = [
 		{ path: '/home', label: 'HOME' },
 		{ path: '/people', label: 'PEOPLE' },
