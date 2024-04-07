@@ -5,7 +5,7 @@ import Section4 from './_components/section4';
 
 export default function HomePage() {
 	return (
-		<main className="overflow-x-hidden min-h-11">
+		<main className="overflow-x-hidden mt-14">
 			<Section1 />
 			<Section2 />
 			<Section3 />

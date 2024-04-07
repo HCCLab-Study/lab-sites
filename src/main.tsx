@@ -8,7 +8,6 @@ import { queryClient } from './api/queryClient.ts';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 
-
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<QueryClientProvider client={queryClient}>
 		<BrowserRouter>

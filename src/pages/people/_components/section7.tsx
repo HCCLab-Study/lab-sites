@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Alumni 부분
 function Section7() {
 	return (
@@ -10,7 +8,7 @@ function Section7() {
 				</div>
 				<div className="flex flex-row relative top-[50px]">
 					<div className="flex-1">
-						<h3 className="text-custom-blue font-semibold text-base py-4">대학원생 (Graduate Researcher)</h3>
+						<h3 className="text-custom-blue font-semibold text-base py-4">대학원생 (Graduate Researcher)</h3>
 						<ul className="list-disc list-inside text-sm pb-4">
 							<li className="mb-2">김현수 (MS) 2021.09 ~ 2024.02</li>
 						</ul>
@@ -27,7 +25,7 @@ function Section7() {
 						</ul>
 					</div>
 					<div className="flex-1">
-						<h3 className="text-custom-blue font-semibold text-base py-4">대학원생 (Graduate Researcher)</h3>
+						<h3 className="text-custom-blue font-semibold text-base py-4">대학원생 (Graduate Researcher)</h3>
 						<ul className="list-disc list-inside text-sm pb-4">
 							<li className="mb-2">김채현 2021.07 ~ 2022.12</li>
 							<li className="mb-2">이현빈 2022.04 ~ 2022.07</li>

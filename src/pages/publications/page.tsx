@@ -1,3 +1,11 @@
+import Section1 from './_components/section1';
+import Section2 from './_components/section2';
+
 export default function PublicationsPage() {
-	return <main>논문,저널 등 소개 페이지</main>;
+	return (
+		<main className="mt-14">
+			<Section1 />
+			<Section2 />
+		</main>
+	);
 }
