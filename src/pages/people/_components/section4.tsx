@@ -1,21 +1,7 @@
 import React from 'react';
+import graduateStudents_part from '../_data/graduateStudents_part';
 
 // Graduate Students(part-time) 부분
-
-const graduateStudentData = [
-	{
-		name: '박교형',
-		department: 'AI융합산업학과 석사과정',
-		interests: ['#UX', '#Blockchain', '#Datascience'],
-		imageUrl: 'src/assets/images/people/박교형.png',
-	},
-	{
-		name: '강민조',
-		department: 'AI융합산업학과 석사과정',
-		interests: ['#UX_Research', '#Fintech'],
-		imageUrl: 'src/assets/images/people/강민조.png',
-	},
-];
 
 function Section4() {
 	return (
@@ -27,7 +13,7 @@ function Section4() {
 					</h2>
 				</div>
 				<div className="flex flex-row relative top-[50px]">
-					{graduateStudentData.map((person, index) => (
+					{graduateStudents_part.map((person, index) => (
 						<div key={index} className="flex flex-col items-center justify-center">
 							<img
 								src={person.imageUrl}

@@ -1,21 +1,7 @@
 import React from 'react';
+import undergraduateResearchers from '../_data/undergraduateResearchers';
 
 // Undergraduate Researchers 부분
-
-const undergraduateResearcherData = [
-	{
-		name: '민희원',
-		department: '정보융합학부 3학년',
-		interests: ['#AI', '#FullStack', '#HCI'],
-		imageUrl: 'src/assets/images/people/민희원.png',
-	},
-	{
-		name: '부형진',
-		department: '산업심리학과 4학년',
-		interests: ['#HCI', '#ML'],
-		imageUrl: 'src/assets/images/people/부형진.png',
-	},
-];
 
 function Section5() {
 	return (
@@ -27,7 +13,7 @@ function Section5() {
 					</h2>
 				</div>
 				<div className="flex flex-row relative top-[50px]">
-					{undergraduateResearcherData.map((person, index) => (
+					{undergraduateResearchers.map((person, index) => (
 						<div key={index} className="flex flex-col items-center justify-center">
 							<img
 								src={person.imageUrl}

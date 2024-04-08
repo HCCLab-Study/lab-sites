@@ -1,39 +1,7 @@
 import React from 'react';
+import graduateStudents_full from '../_data/graduateStudents_full'; // 변경된 데이터 가져오기
 
-// Graduate Students (Full-Time) 부분
 
-const graduateStudentData = [
-	{
-		name: '곽소정',
-		department: '인공지능응용학과 석사과정',
-		interests: ['#UX/CX', '#기획', '#DataAnalytics'],
-		imageUrl: 'src/assets/images/people/곽소정.png',
-	},
-	{
-		name: '김주현',
-		department: '인공지능응용학과 석사과정',
-		interests: ['#CX', '#ML', '#NLP', '#DataAnalytics'],
-		imageUrl: 'src/assets/images/people/김주현.png',
-	},
-	{
-		name: '김호준',
-		department: '인공지능응용학과 석사과정',
-		interests: ['#Front-end', '#UX', '#MobileHCI'],
-		imageUrl: 'src/assets/images/people/김호준.png',
-	},
-	{
-		name: '심현',
-		department: '인공지능응용학과 석사과정',
-		interests: ['#NLP', '#full-stack'],
-		imageUrl: 'src/assets/images/people/심현.png',
-	},
-	{
-		name: '황규민',
-		department: '인공지능응용학과 석사과정',
-		interests: ['#HCL/UX', '#mHealth', '#ComputerVision'],
-		imageUrl: 'src/assets/images/people/황규민.png',
-	},
-];
 
 function Section3() {
 	return (
@@ -45,7 +13,7 @@ function Section3() {
 					</h2>
 				</div>
 				<div className="flex flex-row relative top-[50px]">
-					{graduateStudentData.map((person, index) => (
+					{graduateStudents_full.map((person, index) => (
 						<div key={index} className="flex flex-col items-center justify-center">
 							<img
 								src={person.imageUrl}
