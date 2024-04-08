@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PopupComponent from './Popup'; // PopupComponent 컴포넌트 가져오기
 import Project from '../_data/Project'; // Project 인터페이스 가져오기
-import projects from '../_data/projects'; // 변경된 데이터 가져오기
+import finishedProjects from '../_data/finishedProjects'; // 변경된 데이터 가져오기
 
 // Finished Projects부분
 function Section3() {
@@ -25,7 +25,7 @@ function Section3() {
 				</div>
 				<div className="absolute h-[300px] w-[1000px] top-[50px] p-5">
 					<ul className="list-disc list-outside pb-4 text-font-gray">
-                        {projects.finishedProjects.map((project: Project, index: number) => (
+                        {finishedProjects.map((project: Project, index: number) => (
                             <li key={index} onClick={() => handlePopupOpen(project)} className="hover:underline cursor-pointer">
                                 {project.date} {project.title} (<b>{project.organization}</b>)
                             </li>
