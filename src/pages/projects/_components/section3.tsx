@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
-import Popup from './Popup'; // Popup 컴포넌트 가져오기
+import PopupComponent from './Popup'; // PopupComponent 컴포넌트 가져오기
 
 // Finished Projects부분
 function Section3() {
-  const [showPopup, setShowPopup] = useState(false);
-  
-  const handlePopupOpen = () => {
-    setShowPopup(true);
-  };
+    const [showPopup, setShowPopup] = useState(false);
+
+    const handlePopupOpen = () => {
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
+    };
 
 	return (
 		<section className="relative w-full	h-[1050px] left-0 right-0 bg-section-gray">
@@ -103,6 +107,7 @@ function Section3() {
 					</ul>
 				</div>
 			</div>
+			{showPopup && <PopupComponent onClose={handleClosePopup} />}
 		</section>
 	);
 }
