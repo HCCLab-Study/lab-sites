@@ -1,65 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PopupComponent from './Popup';
+import Person from '../_data/Person';
+import developerInternship from '../_data/developerInternship';
 
 // Developer internship 부분
 
-const developerInternshipData = [
-	{
-		name: '이지은',
-		department: '정보융합학부 4학년',
-		interests: ['#back-end', '#spring', '#HCI'],
-		imageUrl: 'src/assets/images/people/이지은.png',
-	},
-	{
-		name: '이종민',
-		department: '정보융합학부 4학년',
-		interests: ['#full-stack', '#AI'],
-		imageUrl: 'src/assets/images/people/이종민.png',
-	},
-	{
-		name: '이건희',
-		department: '정보융합학부 4학년',
-		interests: ['#full-stack', '#spring'],
-		imageUrl: 'src/assets/images/people/이건희.png',
-	},
-	{
-		name: '고석환',
-		department: '정보융합학부 4학년',
-		interests: ['#front-end', '#react'],
-		imageUrl: 'src/assets/images/people/고석환.png',
-	},
-	{
-		name: '서대원',
-		department: '정보융합학부 4학년',
-		interests: ['#front-end', '#react'],
-		imageUrl: 'src/assets/images/people/서대원.png',
-	},
-	{
-		name: '홍유진',
-		department: '정보융합학부 3학년',
-		interests: ['#front-end', '#react'],
-		imageUrl: 'src/assets/images/people/홍유진.png',
-	},
-	{
-		name: '이승훈',
-		department: '정보융합학부 4학년',
-		interests: ['#front-end', '#mobile'],
-		imageUrl: 'src/assets/images/people/이승훈.png',
-	},
-	{
-		name: '강준우',
-		department: '정보융합학부 3학년',
-		interests: ['#FullStack'],
-		imageUrl: 'src/assets/images/people/강준우.png',
-	},
-	{
-		name: '박준수',
-		department: '정보융합학부 4학년',
-		interests: ['#FullStack', '#ML', '#기획', '#HumanFactors'],
-		imageUrl: 'src/assets/images/people/박준수.png',
-	},
-];
-
 function Section6() {
+	const [showPopup, setShowPopup] = useState(false);
+    const [selectedPerson, setSelectedPerson] = useState<Person | null>(null);
+
+    const handlePopupOpen = (person: Person) => {
+        setSelectedPerson(person);
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
+    };
+
 	return (
 		<section className="relative w-full	h-[700px] left-0 right-0">
 			<div className="absolute h-[650px] w-[1000px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto text-custom-navy">
@@ -67,8 +25,8 @@ function Section6() {
 					<h2 className="absolute flex items-center text-3xl font-semibold tracking-widest">Developer Intership</h2>
 				</div>
 				<div className="flex flex-row relative top-[50px]">
-					{developerInternshipData.slice(0, 5).map((person, index) => (
-						<div key={index} className="flex flex-col items-center justify-center">
+					{developerInternship.slice(0, 5).map((person: Person, index: number) => (
+						<div key={index} onClick={() => handlePopupOpen(person)} className="flex flex-col items-center justify-center hover:underline cursor-pointer">
 							<img
 								src={person.imageUrl}
 								alt={`${person.name} 이미지`}
@@ -83,8 +41,8 @@ function Section6() {
 					))}
 				</div>
 				<div className="flex flex-row relative top-[50px]">
-					{developerInternshipData.slice(5, 9).map((person, index) => (
-						<div key={index} className="flex flex-col items-center justify-center">
+					{developerInternship.slice(5, 9).map((person, index) => (
+						<div key={index} onClick={() => handlePopupOpen(person)} className="flex flex-col items-center justify-center hover:underline cursor-pointer">
 							<img
 								src={person.imageUrl}
 								alt={`${person.name} 이미지`}
@@ -99,6 +57,16 @@ function Section6() {
 					))}
 				</div>
 			</div>
+			{showPopup && selectedPerson && (
+                <PopupComponent
+                    onClose={handleClosePopup}
+                    name={selectedPerson.name}
+                    department={selectedPerson.department}
+                    interests={selectedPerson.interests}
+                    imageUrl={selectedPerson.imageUrl}
+					content={selectedPerson.content}
+                />
+            )}
 		</section>
 	);
 }

@@ -1,23 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PopupComponent from './Popup';
+import Person from '../_data/Person';
+import graduateStudents_part from '../_data/graduateStudents_part';
 
 // Graduate Students(part-time) 부분
 
-const graduateStudentData = [
-	{
-		name: '박교형',
-		department: 'AI융합산업학과 석사과정',
-		interests: ['#UX', '#Blockchain', '#Datascience'],
-		imageUrl: 'src/assets/images/people/박교형.png',
-	},
-	{
-		name: '강민조',
-		department: 'AI융합산업학과 석사과정',
-		interests: ['#UX_Research', '#Fintech'],
-		imageUrl: 'src/assets/images/people/강민조.png',
-	},
-];
-
 function Section4() {
+	const [showPopup, setShowPopup] = useState(false);
+    const [selectedPerson, setSelectedPerson] = useState<Person | null>(null);
+
+    const handlePopupOpen = (person: Person) => {
+        setSelectedPerson(person);
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
+    };
+
 	return (
 		<section className="relative w-full	h-[400px] left-0 right-0">
 			<div className="absolute h-[350px] w-[1000px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto text-custom-navy">
@@ -27,8 +27,8 @@ function Section4() {
 					</h2>
 				</div>
 				<div className="flex flex-row relative top-[50px]">
-					{graduateStudentData.map((person, index) => (
-						<div key={index} className="flex flex-col items-center justify-center">
+					{graduateStudents_part.map((person: Person, index: number) => (
+						<div key={index} onClick={() => handlePopupOpen(person)} className="flex flex-col items-center justify-center hover:underline cursor-pointer">
 							<img
 								src={person.imageUrl}
 								alt={`${person.name} 이미지`}
@@ -43,6 +43,16 @@ function Section4() {
 					))}
 				</div>
 			</div>
+			{showPopup && selectedPerson && (
+                <PopupComponent
+                    onClose={handleClosePopup}
+                    name={selectedPerson.name}
+                    department={selectedPerson.department}
+                    interests={selectedPerson.interests}
+                    imageUrl={selectedPerson.imageUrl}
+					content={selectedPerson.content}
+                />
+            )}
 		</section>
 	);
 }
