@@ -3,6 +3,7 @@ interface Person {
     department: string;
     interests: string[];
     imageUrl: string;
+    content: string;
 }
 
 export default Person;

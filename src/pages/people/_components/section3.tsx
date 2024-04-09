@@ -1,9 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PopupComponent from './Popup';
+import Person from '../_data/Person';
 import graduateStudents_full from '../_data/graduateStudents_full'; // 변경된 데이터 가져오기
 
 
 
 function Section3() {
+	const [showPopup, setShowPopup] = useState(false);
+    const [selectedPerson, setSelectedPerson] = useState<Person | null>(null);
+
+    const handlePopupOpen = (person: Person) => {
+        setSelectedPerson(person);
+        setShowPopup(true);
+    };
+
+    const handleClosePopup = () => {
+        setShowPopup(false);
+    };
+
 	return (
 		<section className="relative w-full	h-[400px] left-0 right-0 bg-section-gray">
 			<div className="absolute h-[350px] w-[1000px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto text-custom-navy">
@@ -13,8 +27,8 @@ function Section3() {
 					</h2>
 				</div>
 				<div className="flex flex-row relative top-[50px]">
-					{graduateStudents_full.map((person, index) => (
-						<div key={index} className="flex flex-col items-center justify-center">
+					{graduateStudents_full.map((person: Person, index: number) => (
+						<div key={index} onClick={() => handlePopupOpen(person)} className="flex flex-col items-center justify-center hover:underline cursor-pointer">
 							<img
 								src={person.imageUrl}
 								alt={`${person.name} 이미지`}
@@ -29,6 +43,16 @@ function Section3() {
 					))}
 				</div>
 			</div>
+			{showPopup && selectedPerson && (
+                <PopupComponent
+                    onClose={handleClosePopup}
+                    name={selectedPerson.name}
+                    department={selectedPerson.department}
+                    interests={selectedPerson.interests}
+                    imageUrl={selectedPerson.imageUrl}
+					content={selectedPerson.content}
+                />
+            )}
 		</section>
 	);
 }
