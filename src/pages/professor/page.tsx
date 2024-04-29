@@ -9,7 +9,7 @@ import Section8 from './_components/section8';
 
 export default function ProfessorPage() {
 	return ( 
-		<main className='mt-14'>
+		<main className='overflow-hidden mt-14'>
 			<Section1 />
 			<Section2 />
 			<Section3 />

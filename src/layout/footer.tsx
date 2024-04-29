@@ -1,13 +1,14 @@
-import { Outlet } from 'react-router-dom';
+import Desktop_Footer from "./_footer/desktop_footer";
+import Mobile_Footer from "./_footer/mobile_footer";
+import { ResponsiveContainer } from '../Responsive';
+import Tablet_Footer from "./_footer/tablet_footer";
 
-export default function Footer() {
-	return (
-		<>
-			<footer className='bg-custom-navy border border-black h-20 flex items-center justify-center'>
-				<p className='text-white'>Copyright © HCC Lab. All rights reserved.</p>
-			</footer>
-			<Outlet />
-		</>
-	);
+function Footer() {
+  return (
+    <>
+    <ResponsiveContainer desktopContainer={<Desktop_Footer/>} mobileContainer={<Mobile_Footer/>} tabletContainer={<Tablet_Footer />}/>
+    </>
+  );
 }
 
+export default Footer;

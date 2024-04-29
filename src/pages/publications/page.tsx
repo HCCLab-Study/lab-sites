@@ -3,7 +3,7 @@ import Section2 from './_components/section2';
 
 export default function PublicationsPage() {
 	return (
-		<main className="mt-14">
+		<main className='overflow-hidden mt-14'>
 			<Section1 />
 			<Section2 />
 		</main>

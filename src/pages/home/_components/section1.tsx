@@ -1,17 +1,13 @@
-// Title
+import { ResponsiveContainer } from '../../../Responsive';
+import DeskTop_Section1 from './_section1/desktop_section1';
+import Mobile_Section1 from './_section1/mobile_section1';
+import Tablet_Section1 from './_section1/tablet_section1';
+
 function Section1() {
 	return (
-		<section className="relative w-full h-[350px] left-0 right-0 bg-gradient-to-br from-custom-red to-custom-blue">
-			<div
-				className="absolute bottom-0 inset-x-0 justify-center font-roboto flex items-center justify-center text-white font-semibold text-center text-6xl leading-normal"
-				style={{ padding: '50px' }}>
-				Interactive Digital
-				<br />
-				Experience Analytics
-				<br />
-				Laboratory
-			</div>
-		</section>
+		<>
+			<ResponsiveContainer desktopContainer={<DeskTop_Section1 />} mobileContainer={<Mobile_Section1 />} tabletContainer={<Tablet_Section1 />} />
+		</>
 	);
 }
 

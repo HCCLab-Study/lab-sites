@@ -1,6 +1,6 @@
 import Project from './Project';
 
-const finishedProjects: Project[] = [
+export const finishedProjects: Project[] = [
     {
         date: "2021.03 - 2024.02",
         title: "신뢰 조절을 활용한 자율주행시스템의 운전자 경험 설계 및 모델링 Experience Design and Modeling of Autonomous Driving System using Trust Calibration",
@@ -134,6 +134,3 @@ const finishedProjects: Project[] = [
         content: "projects/_data/finshedProjects.ts 파일에 프로젝트 객체를 만들어뒀는데요, content에 적는 내용이 여기에 보이게 됩니다.. 프로젝트 관련 설명같은거 적기................................ 내용이 팝업창보다 많아지면 스크롤바 생김!!!!!! 줄넘김 하고싶으면 &lt;br&gt; 입력하면 됩니다!!"
     }
 ];
-
-
-export default finishedProjects;

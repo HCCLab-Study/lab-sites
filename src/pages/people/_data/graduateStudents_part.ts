@@ -1,6 +1,6 @@
 import Person from './Person';
 
-const graduateStudents_part: Person[] = [
+export const graduateStudents_part: Person[] = [
 	{
 		name: '박교형',
 		department: 'AI융합산업학과 석사과정',
@@ -15,6 +15,4 @@ const graduateStudents_part: Person[] = [
 		imageUrl: 'src/assets/images/people/강민조.png',
 		content: '여기에 설명을 추가하기.. 줄넘김 하고싶으면 &lt;br&gt; 입력하면 됩니다!!'
 	},
-]
-
-export default graduateStudents_part;
+];
