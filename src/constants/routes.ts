@@ -2,6 +2,7 @@ export const routes = {
 	home: '/home',
 	people: '/people',
 	professor: '/people/professor',
+	professor_eng: 'people/professor_eng',
 	projects: '/projects',
 	publications: '/publications',
 	lectures: '/lectures',

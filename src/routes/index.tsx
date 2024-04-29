@@ -9,6 +9,7 @@ import PublicationsPage from '../pages/publications/page';
 import LecturesPage from '../pages/lectures/page';
 import ClubPage from '../pages/club/page';
 import ProfessorPage from '../pages/professor/page';
+import ProfessorEngPage from '../pages/professor_eng/page';
 
 export default function Router() {
 	const elements = [
@@ -43,6 +44,10 @@ export default function Router() {
 				{
 					path: routes.professor, // director
 					element: <ProfessorPage />,
+				},
+				{
+					path: routes.professor_eng, // director
+					element: <ProfessorEngPage />,
 				},
 
 				{
