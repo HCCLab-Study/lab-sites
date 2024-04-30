@@ -5,16 +5,16 @@ import { usePopup } from '../../_hooks/usePopup';
 
 // On-going Projects 부분
 function DeskTop_Section2() {
-	const { showPopup, selectedProject, handlePopupOpen, handleClosePopup } = usePopup();
+    const { showPopup, selectedProject, handlePopupOpen, handleClosePopup } = usePopup();
 
     return (
-        <section className='relative w-full h-[350px] left-0 right-0'>
-            <div className='absolute h-[250px] w-[1000px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto text-custom-navy'>
-                <div className='absolute h-[50px] w-full border-b-2 border-custom-blue'>
-                    <h2 className='absolute flex items-center text-3xl font-semibold tracking-widest'>On-going Projects</h2>
+        <section className='relative w-full h-auto'>
+            <div className='relative w-full max-w-[1000px] m-auto pb-10 font-roboto text-custom-navy'>
+                <div className='border-b-2 border-custom-blue mb-6 mt-12'>
+                    <h2 className='flex items-center text-3xl font-semibold tracking-widest mb-3'>On-going Projects</h2>
                 </div>
-                <div className='absolute h-[300px] w-[1000px] top-[50px] p-5'>
-                    <ul className='list-disc list-outside pb-4 text-font-gray'>
+                <div className='relative pt-1'>
+                    <ul className='list-disc list-outside pb-4 text-font-gray pl-6'>
                         {onGoingProjects.map((project: Project, index: number) => (
                             <li key={index} onClick={() => handlePopupOpen(project)} className='hover:underline cursor-pointer'>
                                 {project.date} {project.title} (<b>{project.organization}</b>)

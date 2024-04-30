@@ -1,4 +1,5 @@
-import { professorInfo } from '../../_data/professorProfile';
+import { Link } from 'react-router-dom';
+import { professorProfile } from '../../_data/professorProfile';
 
 // 교수님 프로필 이미지, 소개
 function DeskTop_Section1() {
@@ -10,18 +11,18 @@ function DeskTop_Section1() {
                 Director
             </div>
             <div className='absolute h-[300px] w-[250px] top-[110px] left-80 flex justify-center items-center'>
-                <img src={professorInfo.imageUrl} alt={professorInfo.altText} className='w-[250px] h-[250px] object-cover' />
+                <img src={professorProfile.imageUrl} alt={professorProfile.altText} className='w-[250px] h-[250px] object-cover' />
             </div>
             <div className='flex items-center justify-center px-8 py-2 mr-16'>
-                <p className='font-semibold text-white mr-4 text-xl'>{professorInfo.name}</p>
+                <p className='font-semibold text-white mr-4 text-xl'>{professorProfile.name}</p>
                 <p className='text-white text-xl'> | </p>
-                <p className='text-white text-xl ml-4'>{professorInfo.title}</p>
+                <p className='text-white text-xl ml-4'>{professorProfile.title}</p>
             </div>
-            <button
-                className='absolute right-0 bottom-0 mb-4 mr-80 px-8 py-2 bg-white font-semibold shadow-md hover:bg-gray-100 rounded-3xl'
-                type='button'>
+            <Link
+                to="/people/professor_eng"
+                className="absolute right-0 bottom-0 mb-4 mr-80 px-8 py-2 bg-white font-semibold shadow-md hover:bg-gray-100 rounded-3xl">
                 ENG.ver.
-            </button>
+            </Link>
         </section>
     );
 }
