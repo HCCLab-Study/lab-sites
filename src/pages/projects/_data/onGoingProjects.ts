@@ -1,6 +1,6 @@
 import Project from './Project';
 
-const onGoingProjects: Project[] = [
+export const onGoingProjects: Project[] = [
     {
         date: "2023.10 - 2025.09",
         title: "머신러닝 기반 파킨슨병 환자의 변화 지표 모니터링과 맞춤형 자조관리 시스템",
@@ -26,6 +26,3 @@ const onGoingProjects: Project[] = [
         content: "projects/_data/onGoingProjects.ts 파일에 프로젝트 객체를 만들어뒀는데요, content에 적는 내용이 여기에 보이게 됩니다.. 프로젝트 관련 설명같은거 적기................................ 내용이 팝업창보다 많아지면 스크롤바 생김!!!!!! 줄넘김 하고싶으면 &lt;br&gt; 입력하면 됩니다!!"
     }
 ];
-
-
-export default onGoingProjects;

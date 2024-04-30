@@ -1,6 +1,6 @@
 import Person from './Person';
 
-const developerInternship: Person[] = [
+export const developerInternship: Person[] = [
 	{
 		name: '이지은',
 		department: '정보융합학부 4학년',
@@ -64,6 +64,4 @@ const developerInternship: Person[] = [
 		imageUrl: 'src/assets/images/people/박준수.png',
 		content: '여기에 설명을 추가하기.. 줄넘김 하고싶으면 &lt;br&gt; 입력하면 됩니다!!'
 	},
-]
-
-export default developerInternship;
+];

@@ -41,7 +41,7 @@ export default function Header() {
 
 	return (
 		<>
-			<header className='fixed top-0 flex items-center justify-between w-full z-[999] h-14 bg-gradient-to-r from-sky-500 to-indigo-500'>
+			<header className="fixed top-0 flex items-center justify-between w-full z-[999] h-14 bg-gradient-to-r from-[#A64D4D] to-[#5F608F]">
 				{width > 1468 ? (
 					<div className='flex items-center ml-32'>
 						<Link to='home' className='text-white logo'>
@@ -78,28 +78,12 @@ export default function Header() {
 									</Link>
 								</li>
 							))}
-							<li>
-								<button
-									onClick={() => {
-										fetch('/api/people')
-											.then((res) => res.json())
-											.then((data) => console.log(data));
-									}}>
-									api 호출
-								</button>
-							</li>
-							<div className='relative rounded-full inline-flex mt-1.1'>
-								<input className='py-2 pl-4 pr-2 text-black rounded-full' type='text' placeholder='Search' />
-								<button className='absolute top-0 right-0 mt-2 mr-2'>
-									<img src='../src/assets/images/header/magnifying-glass.png' alt='magnifying-glass' className='w-6' />
-								</button>
-							</div>
 						</ul>
 					</nav>
 				)}
 			</header>
 			{isMenuOpen && width <= 1468 && (
-				<div className="fixed top-0 left-0 w-full bg-white bg-opacity-60 z-50 flex flex-col items-center justify-cente">
+				<div className="fixed top-0 left-0 w-full bg-snow bg-opacity-80 z-50 flex flex-col items-center justify-center">
 					<ul className='flex flex-col items-center mt-16 text-lg'>
 						{menuItems.map((item) => (
 							<li key={item.path}>

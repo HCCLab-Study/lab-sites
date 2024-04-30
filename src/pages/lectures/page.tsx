@@ -5,7 +5,7 @@ import Section4 from './_components/section4';
 
 export default function LecturesPage() {
 	return ( 
-		<main className='mt-14'>
+		<main className='overflow-hidden mt-14'>
 			<Section1 />
 			<Section2 />
 			<Section3 />

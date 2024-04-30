@@ -1,28 +1,13 @@
-import React from 'react';
+import { ResponsiveContainer } from '../../../Responsive';
+import DeskTop_Section5 from './_section5/desktop_section5';
+import Mobile_Section5 from './_section5/mobile_section5';
+import Tablet_Section5 from './_section5/tablet_section5';
 
-// 교수님 학력
 function Section5() {
 	return (
-		<section className="relative w-full h-[250px] left-0 right-0 bg-section-gray">
-			<div className="absolute h-[150] w-[1000px] left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 font-roboto text-custom-navy">
-				<div className="absolute h-[50px] w-full border-b-2 border-custom-blue">
-					<h2 className="absolute flex items-center text-3xl font-semibold tracking-widest">Education</h2>
-				</div>
-				<div className="pt-20 pl-6">
-					<ul className="list-disc">
-						<li className="mb-2">
-							2012.03 - 2019.02 Ph.D. in HCI/UX (Convergence IT Engineering), Pohang University of Science and
-							Technology (POSTECH)
-						</li>
-						<li className="mb-2">
-							2006.03 - 2012.02 B.S. in Computer Science and Engineering, Kyungpook National University (National Full
-							Scholarship)
-						</li>
-						<li className="mb-2">2003.03 - 2006.02 Daegu High School</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+		<>
+			<ResponsiveContainer desktopContainer={<DeskTop_Section5 />} mobileContainer={<Mobile_Section5 />} tabletContainer={<Tablet_Section5 />} />
+		</>
 	);
 }
 
